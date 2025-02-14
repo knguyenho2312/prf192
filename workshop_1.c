@@ -12,7 +12,7 @@ int main(){
 		printf("\nEnter the number of student (>=1): ");
 		scanf("%d", &n);
 	}
-	int score[n];
+	int score[n]; //i have no idea how can i store student score by using other method beside Array 
 	for(int i = 0; i < n; i++){
 		printf("\nEnter the score for student %d (0-10): ", i+1);
 		scanf("%d", &score[i]);
