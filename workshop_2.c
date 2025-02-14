@@ -11,7 +11,7 @@ int main() {
 	float total_salary_cost = 0;
 	int count_25 = 0, count_15 = 0, count_10 = 0;
 	
-	printf("\nEnter the number of employees: "); //step 2
+	printf("\nEnter the number of employees: "); 
 	scanf("%d", &num_employees);
 	while(num_employees < 1){
 		exit(0);
