@@ -1,5 +1,5 @@
 //in order to run workshop 5 normally without changing anything, you have to put data file, result file and workshop 5 on the same folder//
-
+//you can download both output and input data in place_holder//
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_SIZE 100
