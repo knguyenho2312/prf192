@@ -93,7 +93,7 @@ int findproductID(const char *filename, int ID, struct Product *foundProduct){
 	
 	while(fread(&product, sizeof(struct Product), 1, Fp)){
 		if(product.product_id == ID){
-			*foundProduct = product; //all of the value in order to modify them
+			*foundProduct = product; //copy product data in order to modify them
 			fclose(Fp);
 			return 1;
 		}
