@@ -157,7 +157,7 @@ void appendProducts(const char *filename, int numProducts){
 	}
 	
 	for(int i = 0; i < numProducts; i++){
-		int valid = 0; //a variable to check if ID product is unique
+		int valid = 0; //a flag to check product ID 
 		
 		printf("Enter detail for product %d\n", i+1);
 		while(valid == 0){
