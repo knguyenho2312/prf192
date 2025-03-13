@@ -226,7 +226,7 @@ void modifyProducts(const char *filename){
 		exit(0);
 	}
 	
-	printf("\n	Enter the Product ID to modify: ");
+	printf("\nEnter the Product ID to modify: ");
 	scanf("%d", &p.product_id);
 	
 	if(findproductID(filename, p.product_id, &foundProduct)){
