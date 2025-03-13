@@ -123,7 +123,7 @@ void addStudent(const char *filename){
 void searchStudentById(const char *filename, int id){
 	FILE *Fp;
 	struct Student s;
-	int studentID, found = 0; //found is a flag to break the loop; 
+	int studentID;
 	
 	Fp = fopen(filename, "r");
 	if(Fp == NULL){
@@ -139,17 +139,15 @@ void searchStudentById(const char *filename, int id){
 			break;
 		}
 	}
-	if(found == 0){
-		printf("There is no student with this ID %d\n", id);
-	}
+	printf("There is no student with this ID %d", id);
 	
 	fclose(Fp);
+	return 0;
 }
 
 void searchStudentByLastName(const char *filename, const char *lastName){
 	FILE *Fp; 
 	struct Student s;
-	int found = 0; //a flag
 	
 	Fp = fopen(filename, "r");
 	if(Fp == NULL){
@@ -162,14 +160,13 @@ void searchStudentByLastName(const char *filename, const char *lastName){
 			printf("Student Found:\n");
 			printf("----------------------------------\n");
 			printf("ID: %d\nFirst Name: %s\nLast Name: %s\nGPA: %0.2f\n",s.id, s.firstName, s.lastName, s.gpa);
-			found = 1;
+			return 1;
 		}
 	}
-	if(found == 0){
-		printf("There is no student with this name %s ", lastName);
-	}
+	printf("There is no student with this name %s ", lastName);
 	
 	fclose(Fp);
+	return 0;
 }
 
 void displayStudents(const char *filename){
@@ -181,7 +178,6 @@ void displayStudents(const char *filename){
 			printf("Can't open file. The program will close.");
 			exit(1);
 	}
-	
 	printf("\nStudents Sorted by Last Name: \n");
     printf("-------------------------------------------------\n");
     printf("ID        First Name        Last Name       GPA\n");
