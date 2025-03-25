@@ -1,7 +1,7 @@
-Q1. Convert Celsius to Fahrenheit
+Q1. Convert Celsius to Fahrenheit.
 
-Q2. Calculate sum of: 1 + 1/1 + 1/2 + ... + 1/n
+Q2. Calculate sum of: 1 + 1/1 + 1/2 + ... + 1/n.
 
-Q3. Find a specific number appear in an array and print out all positions of it, otherwise print out the last value of the array 
+Q3. Find a specific number appear in an array and print out all positions of it, otherwise print out the last value of the array.
 
-Q4. Count upper letters
+Q4. Count upper letters only.
