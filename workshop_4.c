@@ -92,6 +92,8 @@ void displaySales(SalesData data) {
 	}
 }
 
+//both are bubble sort, suggest you goes to stackoverflow for better understanding
+
 SalesData sortAscending(SalesData data) {
     for (int i = 0; i < data.count - 1; i++) {
         for (int j = 0; j < data.count - 1 - i; j++) {
