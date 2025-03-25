@@ -4,7 +4,7 @@
 #define MAX_DAYS 100
 
 typedef struct {
-	int sales[MAX_DAYS]; //both sales and days are completely different array
+	int sales[MAX_DAYS];
 	int days[MAX_DAYS];
 	int count;
 } SalesData;
